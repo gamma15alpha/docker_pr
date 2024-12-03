@@ -1,0 +1,9 @@
+FROM python:alpine
+
+LABEL version="1.0.1"
+
+WORKDIR /demo/python
+
+COPY . /demo/python/
+
+CMD [ "python", "test.py" ]
